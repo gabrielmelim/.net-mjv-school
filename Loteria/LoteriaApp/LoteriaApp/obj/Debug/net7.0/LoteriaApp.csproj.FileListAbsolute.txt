@@ -18,3 +18,5 @@ G:\.NET\CsharpMJV\Loteria\LoteriaApp\LoteriaApp\obj\Debug\net7.0\LoteriaApp.genr
 G:\.NET\CsharpMJV\Loteria\LoteriaApp\LoteriaApp\obj\Debug\net7.0\ref\LoteriaApp.dll
 G:\.NET\CsharpMJV\Loteria\LoteriaApp\LoteriaApp\bin\Debug\net7.0\Security.dll
 G:\.NET\CsharpMJV\Loteria\LoteriaApp\LoteriaApp\bin\Debug\net7.0\Security.pdb
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LoteriaApp\bin\Debug\net7.0\FileManager.dll
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LoteriaApp\bin\Debug\net7.0\FileManager.pdb

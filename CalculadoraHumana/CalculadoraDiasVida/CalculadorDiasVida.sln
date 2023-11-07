@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoTopLevel_1", "ProjetoTopLevel_1\ProjetoTopLevel_1.csproj", "{3760B471-32D9-4CA2-A9CF-3776843AE94F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcularDiasVida", "CalcularDiasVida\CalcularDiasVida.csproj", "{3760B471-32D9-4CA2-A9CF-3776843AE94F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

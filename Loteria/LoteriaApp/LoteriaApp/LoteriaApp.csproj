@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\FileManager\FileManager.csproj" />
       <ProjectReference Include="..\LotericaLibrary\LotericaLibrary.csproj" />
       <ProjectReference Include="..\Security\Security.csproj" />
     </ItemGroup>

@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "FileManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/FileManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileManager.dll": {}
+        }
+      },
       "LotericaLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -25,6 +35,11 @@
     }
   },
   "libraries": {
+    "FileManager/1.0.0": {
+      "type": "project",
+      "path": "../FileManager/FileManager.csproj",
+      "msbuildProject": "../FileManager/FileManager.csproj"
+    },
     "LotericaLibrary/1.0.0": {
       "type": "project",
       "path": "../LotericaLibrary/LotericaLibrary.csproj",
@@ -38,6 +53,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "FileManager >= 1.0.0",
       "LotericaLibrary >= 1.0.0",
       "Security >= 1.0.0"
     ]
@@ -67,6 +83,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\FileManager\\FileManager.csproj": {
+              "projectPath": "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\FileManager\\FileManager.csproj"
+            },
             "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\LotericaLibrary\\LotericaLibrary.csproj": {
               "projectPath": "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\LotericaLibrary\\LotericaLibrary.csproj"
             },

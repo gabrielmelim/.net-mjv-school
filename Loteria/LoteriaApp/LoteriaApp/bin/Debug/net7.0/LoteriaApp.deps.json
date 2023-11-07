@@ -8,11 +8,17 @@
     ".NETCoreApp,Version=v7.0": {
       "LoteriaApp/1.0.0": {
         "dependencies": {
+          "FileManager": "1.0.0",
           "LotericaLibrary": "1.0.0",
           "Security": "1.0.0"
         },
         "runtime": {
           "LoteriaApp.dll": {}
+        }
+      },
+      "FileManager/1.0.0": {
+        "runtime": {
+          "FileManager.dll": {}
         }
       },
       "LotericaLibrary/1.0.0": {
@@ -29,6 +35,11 @@
   },
   "libraries": {
     "LoteriaApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileManager/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

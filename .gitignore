@@ -1,0 +1,15 @@
+# Ignorar diretórios de saída de compilação
+bin/
+obj/
+
+# Ignorar pacotes NuGet e diretórios relacionados
+/packages/
+
+# Ignorar arquivo de configuração do Rider
+riderModule.iml
+
+# Ignorar diretório de cache do ReSharper
+/_ReSharper.Caches/
+
+# Ignorar diretório do Rider
+.idea/

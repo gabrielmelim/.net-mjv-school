@@ -1,7 +1,9 @@
-﻿
+﻿using System;
+using System.IO;
 using System.Security.Cryptography;
-using LoteriaLibrary;
+using LotericaLibrary;
 using Security;
+using FileManager;
 
 class Program
 {
@@ -54,13 +56,13 @@ class Program
                             }
 
                             string pastaJogos = "Jogos";
-                            Directory.CreateDirectory(pastaJogos);
+                            FileHandler.CriarPasta(pastaJogos); // Usando FileHandler do projeto "FileManager"
 
                             string dataDaPasta = DateTime.Now.ToString("dd.MM.yyyy");
                             string subpastaData = Path.Combine(pastaJogos, dataDaPasta);
-                            Directory.CreateDirectory(subpastaData);
+                            FileHandler.CriarPasta(subpastaData); // Usando FileHandler do projeto "FileManager"
 
-                            string arquivoResultado = Path.Combine(subpastaData, $"{nome}-{Guid.NewGuid().ToString().Substring(0, 5)}-{DateTime.Now.ToString("t").Replace(":",".")}.txt");
+                            string arquivoResultado = Path.Combine(subpastaData, $"{nome}-{Guid.NewGuid().ToString().Substring(0, 5)}-{DateTime.Now.ToString("t").Replace(":", ".")}.txt");
 
                             // Gere a chave de criptografia
                             byte[] chaveCriptografia = GerarChaveCriptografia();
@@ -102,12 +104,12 @@ class Program
                             Console.WriteLine("Informe a chave de descriptografia:");
                             var chaveInformada = Console.ReadLine();
                             
-                            string[] arr=chaveInformada.Split('-');
+                            string[] arr = chaveInformada.Split('-');
                             
                             byte[] chave = new byte[arr.Length];
                             
-                            for(int i=0; i<arr.Length; i++)
-                                chave[i]=Convert.ToByte(arr[i],16);
+                            for(int i = 0; i < arr.Length; i++)
+                                chave[i] = Convert.ToByte(arr[i], 16);
                             
                             // Chame a função de descriptografia do projeto "Security"
                             string conteudoDescriptografado = SecurityDecoder.DescriptografarArquivo(caminhoArquivoCriptografado, chave);
@@ -122,22 +124,18 @@ class Program
                                 Console.WriteLine(conteudoDescriptografado);
                                 
                                 string pastaJogos = "Jogos-Decodificados";
-                                Directory.CreateDirectory(pastaJogos);
+                                FileHandler.CriarPasta(pastaJogos); // Usando FileHandler do projeto "FileManager"
 
                                 string dataDaPasta = DateTime.Now.ToString("dd.MM.yyyy");
                                 string subpastaData = Path.Combine(pastaJogos, dataDaPasta);
-                                Directory.CreateDirectory(subpastaData);
+                                FileHandler.CriarPasta(subpastaData); // Usando FileHandler do projeto "FileManager"
 
                                 string arquivoResultado = Path.Combine(subpastaData,
                                     Path.GetFileName(caminhoArquivoCriptografado));
                                 
                                 string caminhoArquivo = "exemplo.txt";
 
-                                using (StreamWriter writer = new StreamWriter(arquivoResultado))
-                                {
-                                    // Escreva a string no arquivo
-                                    writer.WriteLine(conteudoDescriptografado);
-                                }
+                                FileHandler.CriarArquivo(arquivoResultado, conteudoDescriptografado); // Usando FileHandler do projeto "FileManager"
 
                                 Console.WriteLine($"{arquivoResultado} gerado com sucesso!");
                             }

@@ -4,6 +4,59 @@
     "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\LoteriaApp\\LoteriaApp.csproj": {}
   },
   "projects": {
+    "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\FileManager\\FileManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\FileManager\\FileManager.csproj",
+        "projectName": "FileManager",
+        "projectPath": "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\FileManager\\FileManager.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\FileManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\LoteriaApp\\LoteriaApp.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,6 +79,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\FileManager\\FileManager.csproj": {
+                "projectPath": "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\FileManager\\FileManager.csproj"
+              },
               "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\LotericaLibrary\\LotericaLibrary.csproj": {
                 "projectPath": "G:\\.NET\\CsharpMJV\\Loteria\\LoteriaApp\\LotericaLibrary\\LotericaLibrary.csproj"
               },

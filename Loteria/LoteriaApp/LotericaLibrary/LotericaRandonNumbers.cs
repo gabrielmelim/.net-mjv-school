@@ -1,4 +1,4 @@
-﻿namespace LoteriaLibrary
+﻿namespace LotericaLibrary
 {
     public class Loteria
     {
