@@ -7,8 +7,8 @@
 
 <h3 align="left">Projetos</h2>
 
-📁[ContaCorrente](https://github.com/gabrielmelim/mjv-java-school/tree/main/ContaCorrente/src)
+📁[LoteriaApp](https://github.com/gabrielmelim/CsharpMJV/tree/main/Loteria)
 <br>
-📁[Candidatos](https://github.com/gabrielmelim/mjv-java-school/tree/gabriel-melim/Candidatos)
+📁[CalculadoraHumana](https://github.com/gabrielmelim/CsharpMJV/tree/main/CalculadoraHumana)
 
 
