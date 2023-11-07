@@ -37,5 +37,5 @@ Para descriptografar arquivos criptografados, primeiro gere uma chave de descrip
 ## Dependências
 .NET 7
 
-Autor</br>
+Autor:</br>
 Gabriel Melim
