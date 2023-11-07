@@ -7,7 +7,7 @@
 
 <h3 align="left">Projetos</h2>
 
-📁[LoteriaApp](https://github.com/gabrielmelim/CsharpMJV/tree/main/Loteria)
+📁[Loteria](https://github.com/gabrielmelim/CsharpMJV/tree/main/Loteria)
 <br>
 📁[CalculadoraHumana](https://github.com/gabrielmelim/CsharpMJV/tree/main/CalculadoraHumana)
 
