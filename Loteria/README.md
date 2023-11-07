@@ -35,7 +35,7 @@ Para descriptografar arquivos criptografados, primeiro gere uma chave de descrip
  `FileHandler:` Utilitário para criar pastas e arquivos.</br>
 
 ## Dependências
-.NET 7
+- [.NET 7](https://dotnet.microsoft.com/download) instalado no seu sistema.
 
 Autor:</br>
 Gabriel Melim
