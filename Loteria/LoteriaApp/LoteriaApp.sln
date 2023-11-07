@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoteriaApp", "LoteriaApp\LoteriaApp.csproj", "{4F6FEEC1-CB2A-465B-9278-7E6BBA482540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotericaLibrary", "LotericaLibrary\LotericaLibrary.csproj", "{1F84E681-BAC5-4E68-8707-FBF382249B5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security", "Security\Security.csproj", "{56AF00C0-E4CA-4BC1-831B-67562C037B58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F6FEEC1-CB2A-465B-9278-7E6BBA482540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6FEEC1-CB2A-465B-9278-7E6BBA482540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6FEEC1-CB2A-465B-9278-7E6BBA482540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6FEEC1-CB2A-465B-9278-7E6BBA482540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F84E681-BAC5-4E68-8707-FBF382249B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F84E681-BAC5-4E68-8707-FBF382249B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F84E681-BAC5-4E68-8707-FBF382249B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F84E681-BAC5-4E68-8707-FBF382249B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56AF00C0-E4CA-4BC1-831B-67562C037B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56AF00C0-E4CA-4BC1-831B-67562C037B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56AF00C0-E4CA-4BC1-831B-67562C037B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56AF00C0-E4CA-4BC1-831B-67562C037B58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

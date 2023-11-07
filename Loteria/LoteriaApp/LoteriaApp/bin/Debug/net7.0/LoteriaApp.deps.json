@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "LoteriaApp/1.0.0": {
+        "dependencies": {
+          "LotericaLibrary": "1.0.0",
+          "Security": "1.0.0"
+        },
+        "runtime": {
+          "LoteriaApp.dll": {}
+        }
+      },
+      "LotericaLibrary/1.0.0": {
+        "runtime": {
+          "LotericaLibrary.dll": {}
+        }
+      },
+      "Security/1.0.0": {
+        "runtime": {
+          "Security.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LoteriaApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LotericaLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Security/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\bin\Debug\net7.0\Security.deps.json
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\bin\Debug\net7.0\Security.dll
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\bin\Debug\net7.0\Security.pdb
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\obj\Debug\net7.0\Security.GeneratedMSBuildEditorConfig.editorconfig
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\obj\Debug\net7.0\Security.AssemblyInfoInputs.cache
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\obj\Debug\net7.0\Security.AssemblyInfo.cs
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\obj\Debug\net7.0\Security.csproj.CoreCompileInputs.cache
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\obj\Debug\net7.0\Security.dll
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\obj\Debug\net7.0\refint\Security.dll
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\obj\Debug\net7.0\Security.pdb
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\Security\obj\Debug\net7.0\ref\Security.dll

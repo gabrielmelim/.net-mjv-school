@@ -1,0 +1,11 @@
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\bin\Debug\net7.0\LotericaLibrary.deps.json
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\bin\Debug\net7.0\LotericaLibrary.dll
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\bin\Debug\net7.0\LotericaLibrary.pdb
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\obj\Debug\net7.0\LotericaLibrary.GeneratedMSBuildEditorConfig.editorconfig
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\obj\Debug\net7.0\LotericaLibrary.AssemblyInfoInputs.cache
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\obj\Debug\net7.0\LotericaLibrary.AssemblyInfo.cs
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\obj\Debug\net7.0\LotericaLibrary.csproj.CoreCompileInputs.cache
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\obj\Debug\net7.0\LotericaLibrary.dll
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\obj\Debug\net7.0\refint\LotericaLibrary.dll
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\obj\Debug\net7.0\LotericaLibrary.pdb
+G:\.NET\CsharpMJV\Loteria\LoteriaApp\LotericaLibrary\obj\Debug\net7.0\ref\LotericaLibrary.dll
