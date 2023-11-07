@@ -22,3 +22,6 @@ Este repositório contém um programa simples em C# que calcula quando uma pesso
    
 2. Abra o projeto em uma IDE compatível com .NET 7.
 3. Execute o programa a partir da classe Program.
+
+Autor:</br>
+Gabriel Melim
