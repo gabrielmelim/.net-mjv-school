@@ -15,7 +15,7 @@ Para usar o Lotérica App, siga estas etapas:
 1. Clone este repositório em sua máquina local.
 
    ```bash
-   git clone https://github.com/seu-usuario/loterica-app.git
+   git clone https://github.com/seu-usuario/loterica-app.git](https://github.com/gabrielmelim/CsharpMJV.git
 
    
 2. Abra o projeto em uma IDE compatível com .NET 7.
