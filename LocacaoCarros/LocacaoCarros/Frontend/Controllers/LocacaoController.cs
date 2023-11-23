@@ -53,7 +53,7 @@ namespace Frontend.Controllers
         {
             var locacao = await _api.GetLocacao(id);
             
-            return View();
+            return View(locacao);
         }
 
         [HttpPost]
@@ -76,7 +76,7 @@ namespace Frontend.Controllers
         {
             var locacao = await _api.GetLocacao(id);
             
-            return View();
+            return View(locacao);
         }
 
         [HttpPost]
