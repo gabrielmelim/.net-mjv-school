@@ -13,7 +13,9 @@ Uma aplicação .NET que simula o processo de locação de veículos, composta p
 ## Estrutura do Projeto
 
 ### Back-end
-- [Lista de Controllers do Back-end](backend/controllers.md)
+.net-mjv-school/LocacaoCarros/LocacaoCarros/Backend/Controllers
+/controllers.md
+- [Lista de Controllers do Back-end](https://github.com/gabrielmelim/.net-mjv-school/blob/main/LocacaoCarros/LocacaoCarros/Backend/Controllers/controllers.md)
 - [Lista de Models do Back-end](backend/models.md)
 - [Lista de Serviços do Back-end](backend/services.md)
 
