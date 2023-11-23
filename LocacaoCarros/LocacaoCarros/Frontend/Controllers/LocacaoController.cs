@@ -1,4 +1,5 @@
-﻿using Frontend.Utils;
+﻿using Frontend.Models;
+using Frontend.Utils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,14 +13,19 @@ namespace Frontend.Controllers
         {
             _api = new Api();
         }
+
         public async Task<ActionResult> Index()
         {
-            return View();
+            var locacoes = await _api.GetLocacao();
+
+            return View(locacoes);
         }
 
         public async Task<ActionResult> Details(int id)
         {
-            return View();
+            var locacao = await _api.GetLocacao(id);
+
+            return View(locacao);
         }
 
         public async Task<ActionResult> Create()
@@ -29,10 +35,12 @@ namespace Frontend.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(IFormCollection collection)
+        public async Task<ActionResult> Create(Locacao model)
         {
             try
             {
+                await _api.PostLocacao(model, HttpMethod.Post);
+                
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -43,15 +51,19 @@ namespace Frontend.Controllers
 
         public async Task<ActionResult> Edit(int id)
         {
+            var locacao = await _api.GetLocacao(id);
+            
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(int id, Locacao model)
         {
             try
             {
+                await _api.PutLocacao(id, model, HttpMethod.Put);
+                
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -62,15 +74,19 @@ namespace Frontend.Controllers
 
         public async Task<ActionResult> Delete(int id)
         {
+            var locacao = await _api.GetLocacao(id);
+            
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Delete(int id, IFormCollection collection)
+        public async Task<ActionResult> Delete(int id, Locacao model)
         {
             try
             {
+                await _api.DeleteLocacao(id, HttpMethod.Delete);
+                
                 return RedirectToAction(nameof(Index));
             }
             catch
