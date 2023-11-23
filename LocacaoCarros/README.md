@@ -16,13 +16,10 @@ Uma aplicação .NET que simula o processo de locação de veículos, composta p
 - [Lista de Data do Back-end](https://github.com/gabrielmelim/.net-mjv-school/blob/main/LocacaoCarros/LocacaoCarros/Backend/Data/appDbContext.md)
 
 ### Front-end
-- [Lista de Controllers do Front-end](frontend/controllers.md)
-- [Lista de Views do Front-end](frontend/views.md)
-- [Lista de ViewModel do Front-end](frontend/viewmodels.md)
+ Documentação em construção ....
 
 ### Business (Library)
-- [Lista de Classes de Lógica de Negócio](business/classes.md)
-- [Métodos Importantes da Biblioteca](business/methods.md)
+ Documentação em construção ...
 
 ## Pré-requisitos
 
