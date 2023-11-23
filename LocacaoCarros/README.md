@@ -60,7 +60,7 @@ Execute a aplicação:<br>
 ```bash
 dotnet run
 ```
-A API estará em execução em: http://localhost:5000. (verifique a porta no seu sistema)<br>
+A API estará em execução em: http://localhost:5000. (verifique a porta localhost do seu sistema)<br>
 
 ### Configurando o Front-end (MVC)
 ## Navegue até o diretório do front-end:
@@ -70,10 +70,10 @@ Navegue até o diretório do front-end:<br>
 cd LocacaoCarros/LocacaoCarros/Frontend
 ```
 
-## Contribuindo
+Abra o arquivo de configuração, ajustando conforme necessário.<br>
 
-[Se aceitamos contribuições, forneça orientações sobre como os desenvolvedores podem contribuir para o projeto, como abrir problemas, enviar solicitações de pull, etc.]
-
-## Licença
-
-[MIT License, por exemplo.]
+Execute a aplicação:
+```bash
+dotnet run
+```
+A aplicação MVC estará em execução em: http://localhost:5001. (verifique a porta localhost do seu sistema)
