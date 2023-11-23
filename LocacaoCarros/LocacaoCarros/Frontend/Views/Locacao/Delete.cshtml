@@ -33,7 +33,7 @@
             @Html.DisplayNameFor(model => model.ValorTotalLocacao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ValorTotalLocacao)
+            @Model.ValorTotalLocacao.ToString("N2")
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.IdCliente)
