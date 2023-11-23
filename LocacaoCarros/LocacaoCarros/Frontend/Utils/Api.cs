@@ -311,26 +311,7 @@ namespace Frontend.Utils
                 else { return null; }
             }
         }
-
-        public async Task<Locacao> PutLocacao(int id, Locacao data, HttpMethod method)
-        {
-            HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders
-                 .Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            using (var requestMessage = new HttpRequestMessage(method, $"{ApiUrl}/Locacao/{id}"))
-            {
-                await SetContent(data, requestMessage);
-
-                var response = await client.SendAsync(requestMessage).ConfigureAwait(false);
-                var obj = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    return await Task.FromResult(JsonConvert.DeserializeObject<Locacao>(obj, JsonSettings)).ConfigureAwait(false);
-                }
-                else { return null; }
-            }
-        }
+        
 
         public async Task<Locacao> DeleteLocacao(int id, HttpMethod method)
         {
