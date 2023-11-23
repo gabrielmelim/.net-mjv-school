@@ -56,6 +56,19 @@ Execute as migrações para criar o banco de dados:<br>
 dotnet ef database update
 ```
 
+Execute a aplicação:<br>
+```bash
+dotnet run
+```
+A API estará em execução em: http://localhost:5000. (verifique a porta no seu sistema)<br>
+
+### Configurando o Front-end (MVC)
+## Navegue até o diretório do front-end:
+
+Navegue até o diretório do front-end:<br>
+```bash
+cd LocacaoCarros/LocacaoCarros/Frontend
+```
 
 ## Contribuindo
 
