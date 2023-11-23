@@ -99,7 +99,7 @@ namespace Backend.Controllers
             return CreatedAtAction(nameof(Get), new { id = readVeiculoDto.Id }, readVeiculoDto);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] UpdateVeiculoDto veiculoDto)
         {
             var veiculo = _appDbContext.Veiculos.FirstOrDefault(x => x.Id == id);
@@ -121,7 +121,7 @@ namespace Backend.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var veiculo = _appDbContext.Veiculos.FirstOrDefault(x => x.Id == id);
