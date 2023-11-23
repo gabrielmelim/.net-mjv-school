@@ -48,29 +48,7 @@ namespace Frontend.Controllers
                 return View();
             }
         }
-
-        public async Task<ActionResult> Edit(int id)
-        {
-            var locacao = await _api.GetLocacao(id);
-            
-            return View(locacao);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(int id, Locacao model)
-        {
-            try
-            {
-                await _api.PutLocacao(id, model, HttpMethod.Put);
-                
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        
 
         public async Task<ActionResult> Delete(int id)
         {
