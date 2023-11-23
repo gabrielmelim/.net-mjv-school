@@ -35,7 +35,7 @@ namespace Frontend.Utils
             }
             else
             {
-                throw new Exception("Não foi possivel buscar o cliente");
+                throw new Exception("Não foi possivel buscar o cliente.");
             }
         }
 
@@ -62,7 +62,7 @@ namespace Frontend.Utils
             }
             else
             {
-                throw new Exception("Não foi possivel buscar o cep.");
+                throw new Exception("Não foi possivel buscar o cliente.");
             }
         }
         public async Task<Cliente> PostCliente(Cliente data, HttpMethod method)
@@ -239,7 +239,7 @@ namespace Frontend.Utils
         #endregion
 
         #region Locacao
-        public async Task<Cliente> GetLocacao(int id)
+        public async Task<Locacao> GetLocacao(int id)
         {
             WebResponse response;
             string endPoint = $"{ApiUrl}/Locacao/{id}";
@@ -257,16 +257,16 @@ namespace Frontend.Utils
 
             if (((HttpWebResponse)response).StatusCode == HttpStatusCode.OK)
             {
-                var end = await ProcessResponse<Cliente>(response);
+                var end = await ProcessResponse<Locacao>(response);
                 return end;
             }
             else
             {
-                throw new Exception("Não foi possivel buscar o cep.");
+                throw new Exception("Não foi possivel buscar a locacão.");
             }
         }
 
-        public async Task<List<Cliente>> GetLocacao()
+        public async Task<List<Locacao>> GetLocacao()
         {
             WebResponse response;
             string endPoint = $"{ApiUrl}/Locacao";
@@ -284,15 +284,15 @@ namespace Frontend.Utils
 
             if (((HttpWebResponse)response).StatusCode == HttpStatusCode.OK)
             {
-                var end = await ProcessResponse<List<Cliente>>(response);
+                var end = await ProcessResponse<List<Locacao>>(response);
                 return end;
             }
             else
             {
-                throw new Exception("Não foi possivel buscar o cep.");
+                throw new Exception("Não foi possivel buscar a locação.");
             }
         }
-        public async Task<Cliente> PostLocacao(Cliente data, HttpMethod method)
+        public async Task<Locacao> PostLocacao(Locacao data, HttpMethod method)
         {
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders
@@ -306,13 +306,13 @@ namespace Frontend.Utils
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return await Task.FromResult(JsonConvert.DeserializeObject<Cliente>(obj, JsonSettings)).ConfigureAwait(false);
+                    return await Task.FromResult(JsonConvert.DeserializeObject<Locacao>(obj, JsonSettings)).ConfigureAwait(false);
                 }
                 else { return null; }
             }
         }
 
-        public async Task<Cliente> PutLocacao(int id, Cliente data, HttpMethod method)
+        public async Task<Locacao> PutLocacao(int id, Locacao data, HttpMethod method)
         {
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders
@@ -326,13 +326,13 @@ namespace Frontend.Utils
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return await Task.FromResult(JsonConvert.DeserializeObject<Cliente>(obj, JsonSettings)).ConfigureAwait(false);
+                    return await Task.FromResult(JsonConvert.DeserializeObject<Locacao>(obj, JsonSettings)).ConfigureAwait(false);
                 }
                 else { return null; }
             }
         }
 
-        public async Task<Cliente> DeleteLocacao(int id, HttpMethod method)
+        public async Task<Locacao> DeleteLocacao(int id, HttpMethod method)
         {
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders
@@ -344,7 +344,7 @@ namespace Frontend.Utils
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return await Task.FromResult(JsonConvert.DeserializeObject<Cliente>(obj, JsonSettings)).ConfigureAwait(false);
+                    return await Task.FromResult(JsonConvert.DeserializeObject<Locacao>(obj, JsonSettings)).ConfigureAwait(false);
                 }
                 else { return null; }
             }
