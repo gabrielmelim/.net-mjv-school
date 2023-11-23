@@ -34,6 +34,9 @@ namespace Backend.Controllers
 
             foreach (var locacao in lstLocacoes)
             {
+                // Formata o ValorTotalLocacao para ter duas casas decimais
+                locacao.ValorTotalLocacao = Math.Round(locacao.ValorTotalLocacao, 2);
+                
                 lstLocacaoReadDto.Add(new ReadLocacaoDto()
                 {
                    Id = locacao.Id,
