@@ -1,4 +1,5 @@
-﻿using Frontend.Utils;
+﻿using Frontend.Models;
+using Frontend.Utils;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +22,8 @@ namespace Frontend.Controllers
 
         public async Task<ActionResult> Details(int id)
         {
-            return View();
+           var veiculo = await _api.GetVeiculo(id);
+            return View(veiculo);
         }
 
         public async Task<ActionResult> Create()
@@ -31,10 +33,11 @@ namespace Frontend.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(IFormCollection collection)
+        public async Task<ActionResult> Create(Veiculo model)
         {
             try
             {
+                await _api.PostVeiculo(model, HttpMethod.Post);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -45,15 +48,17 @@ namespace Frontend.Controllers
 
         public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            var veiculo = await _api.GetVeiculo(id);
+            return View(veiculo);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(int id, Veiculo model)
         {
             try
             {
+                await _api.PutVeiculo(id, model, HttpMethod.Put);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -64,6 +69,7 @@ namespace Frontend.Controllers
 
         public async Task<ActionResult> Delete(int id)
         {
+          var veiculo = await _api.GetVeiculo(id);
             return View();
         }
 
@@ -73,6 +79,7 @@ namespace Frontend.Controllers
         {
             try
             {
+                var veiculo = await _api.DeleteVeiculo(id, HttpMethod.Delete);
                 return RedirectToAction(nameof(Index));
             }
             catch

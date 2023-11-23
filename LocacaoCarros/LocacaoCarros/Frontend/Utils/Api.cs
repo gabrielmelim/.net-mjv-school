@@ -176,10 +176,10 @@ namespace Frontend.Utils
             }
             else
             {
-                throw new Exception("Não foi possivel buscar o cep.");
+                throw new Exception("Não foi possivel buscar o veículo");
             }
         }
-        public async Task<Cliente> PostVeiculo(Cliente data, HttpMethod method)
+        public async Task<Veiculo> PostVeiculo(Veiculo data, HttpMethod method)
         {
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders
@@ -193,13 +193,13 @@ namespace Frontend.Utils
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return await Task.FromResult(JsonConvert.DeserializeObject<Cliente>(obj, JsonSettings)).ConfigureAwait(false);
+                    return await Task.FromResult(JsonConvert.DeserializeObject<Veiculo>(obj, JsonSettings)).ConfigureAwait(false);
                 }
                 else { return null; }
             }
         }
 
-        public async Task<Cliente> PutVeiculo(int id, Cliente data, HttpMethod method)
+        public async Task<Veiculo> PutVeiculo(int id, Veiculo data, HttpMethod method)
         {
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders
@@ -213,13 +213,13 @@ namespace Frontend.Utils
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return await Task.FromResult(JsonConvert.DeserializeObject<Cliente>(obj, JsonSettings)).ConfigureAwait(false);
+                    return await Task.FromResult(JsonConvert.DeserializeObject<Veiculo>(obj, JsonSettings)).ConfigureAwait(false);
                 }
                 else { return null; }
             }
         }
 
-        public async Task<Cliente> DeleteVeiculo(int id, HttpMethod method)
+        public async Task<Veiculo> DeleteVeiculo(int id, HttpMethod method)
         {
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders
@@ -231,7 +231,7 @@ namespace Frontend.Utils
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return await Task.FromResult(JsonConvert.DeserializeObject<Cliente>(obj, JsonSettings)).ConfigureAwait(false);
+                    return await Task.FromResult(JsonConvert.DeserializeObject<Veiculo>(obj, JsonSettings)).ConfigureAwait(false);
                 }
                 else { return null; }
             }
