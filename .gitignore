@@ -1,15 +1,81 @@
-# Ignorar diretórios de saída de compilação
+# .gitignore para projetos ASP.NET Core
+
+# Dependências do projeto (incluindo diretórios "node_modules", "bower_components" e "jspm_packages")
+**/node_modules
+**/bower_components
+**/jspm_packages
+
+# Dependências do Visual Studio
+.vscode/
+.vs/
+
+# Arquivos de compilação e saída
 bin/
 obj/
 
-# Ignorar pacotes NuGet e diretórios relacionados
-/packages/
+# Arquivos temporários
+*.DS_Store
+Thumbs.db
 
-# Ignorar arquivo de configuração do Rider
-riderModule.iml
+# Logs e arquivos gerados
+*.log
+*.log.*
+log/
+logs/
 
-# Ignorar diretório de cache do ReSharper
-/_ReSharper.Caches/
+# Pasta de ferramentas do .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
 
-# Ignorar diretório do Rider
+# Pasta de pacotes do NuGet
+packages/
+
+# Pasta de usuários
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Arquivos de backup
+*~
+*.bak
+*.swp
+
+# Configurações de VS Code
+.vscode/
+
+# Configurações de Rider
 .idea/
+
+# Arquivos temporários Rider
+.idea/
+
+# Pasta de ferramentas do Rider
+.idea/
+
+# Pasta de configuração do Rider
+*.sln.iml
+
+# Arquivos do Rider
+.idea/
+
+# Pasta de configuração do Mono
+mono_crash.*
+
+# Logs do Mono
+mono_crash.*
+
+# Configurações de Rider
+.idea/
+*.sln.iml
+*.ipr
+*.iws
+.idea
+*.suo
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.vscode
+.vscode/
