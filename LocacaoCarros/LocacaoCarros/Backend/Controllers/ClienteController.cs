@@ -25,7 +25,7 @@ namespace Backend.Controllers
             OperationId = "GetClientes",
             Tags = new[] { "Clientes" }
         )]
-        [SwaggerResponse(200, "Lista de clientes", typeof(IEnumerable<Cliente>))]
+        [SwaggerResponse(200, "Lista de clientes", typeof(IEnumerable<ReadClienteDto>))]
         public IActionResult Get()
         {
             var lstClientes = _appDbContext.Clientes;
