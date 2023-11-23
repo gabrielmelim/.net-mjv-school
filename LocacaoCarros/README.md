@@ -1,7 +1,5 @@
 # Sistema de Locação de Veículos
 
-![Logo do Projeto](link_para_a_imagem)
-
 Uma aplicação .NET que simula o processo de locação de veículos, composta por três componentes principais:
 
 - **Back-end (API):** Implementação da API usando ASP.NET Core Web API, responsável por gerenciar dados e fornecer serviços para o front-end.
@@ -30,9 +28,34 @@ Uma aplicação .NET que simula o processo de locação de veículos, composta p
 
 - [.NET Core 6](https://dotnet.microsoft.com/download/dotnet/6.0)
 
-## Configuração e Uso
+### Configuração e Uso
 
-[Instruções básicas de configuração e uso, incluindo clonagem do repositório, configuração de banco de dados, execução de migrações, etc.]
+## Clonando o Repositório
+
+Clone o repositório para obter o código-fonte da aplicação:
+
+```bash
+git clone https://github.com/gabrielmelim/.net-mjv-school.git
+cd .net-mjv-school
+```
+
+### Configurando o Ambiente
+Certifique-se de ter o .NET Core 6 instalado no seu sistema.
+
+## Configurando o Back-end (API)
+
+Navegue até o diretório do back-end:
+
+```bash
+cd LocacaoCarros/LocacaoCarros/Backend
+```
+Abra o arquivo de configuração da aplicação, como appsettings.json, e ajuste as configurações, como a string de conexão do banco de dados.<br>
+
+Execute as migrações para criar o banco de dados:<br>
+```bash
+dotnet ef database update
+```
+
 
 ## Contribuindo
 
